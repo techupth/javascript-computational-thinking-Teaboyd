@@ -82,3 +82,10 @@ let orders = [
 ];
 
 // Start coding here
+let maxNumbers;
+for (let i = 0; i < orders.length; i++){
+  
+  if (i === 0){
+
+  }
+}

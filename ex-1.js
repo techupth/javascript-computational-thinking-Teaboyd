@@ -82,3 +82,14 @@ let orders = [
 ];
 
 // Start coding here
+let totalPrice;
+let totalProductPrice = 0;
+let totalProductQuantity =0;
+for (let i = 0; i < orders.length; i++){
+    totalProductPrice = totalProductPrice+orders[i].productPrice;
+    totalProductQuantity = totalProductQuantity+orders[i].productQuantity;
+    totalPrice = totalProductPrice*totalProductQuantity
+}
+console.log(totalProductPrice);
+console.log(totalProductQuantity);
+console.log(totalPrice);
