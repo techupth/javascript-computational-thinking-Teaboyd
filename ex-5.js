@@ -82,3 +82,13 @@ let orders = [
 ];
 
 // Start coding here
+let RichId = null;
+let PayMore = 0;
+for (let i = 0; i < orders.length; i++){
+  let totalPrice = orders[i].productPrice * orders[i].productQuantity;
+  if (totalPrice > PayMore){
+    PayMore = totalPrice;
+    RichId = orders[i];
+  }
+}
+console.log(`The most expensive order is order id ${RichId.id} (${PayMore.toLocaleString()}) Bath`)

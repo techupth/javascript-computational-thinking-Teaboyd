@@ -82,3 +82,11 @@ let orders = [
 ];
 
 // Start coding here
+let tea = 0;
+for (let i = 0; i < orders.length; i++){
+  if (orders[i].creditCardType === "jcb"){
+    let pati = orders[i].productPrice*orders[i].productQuantity;
+    tea += pati;
+  }
+}
+console.log(`Paid by JCB credit card amount: ${tea.toLocaleString()}`)
